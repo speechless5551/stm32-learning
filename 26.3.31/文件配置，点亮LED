@@ -1,0 +1,4 @@
+1.文件配置：工程模板文件中包含标准库的头文件，启动文件，需要根据容量和型号选择不同后缀的启动文件，user里包含STM32标准外设库的配置文件，中断程序文件和中断头文件
+2.在项目管理器中创建分组：Start分组：添加启动文件Library分组：添加固件库源文件User分组：添加用户代码文件
+3.在工程选项 → C/C++ → Define 中输入：USE_STDPERIPH_DRIVER
+4.在工程选项 → C/C++ → Include Paths 中添加：.\Start;.\User;.\Library
